@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tabela de Cores – PT/EN, HEX, RGB</title>
+<style>
+  :root { --bg:#f8fafc; --fg:#0f172a; --muted:#6b7280; --accent:#0d6efd; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial; color:var(--fg); background:var(--bg); }
+  header { padding:24px 16px; text-align:center; }
+  header h1 { margin:0 0 6px; font-size:clamp(20px,2.6vw,28px); }
+  header p { margin:0; color:var(--muted); }
+  .wrap { max-width:1100px; margin:0 auto; padding:16px; }
+  .card { background:#fff; border:1px solid #e5e7eb; border-radius:12px; box-shadow: 0 1px 2px rgba(0,0,0,.04); overflow:hidden; }
+  .toolbar { display:flex; gap:12px; align-items:center; padding:12px 16px; border-bottom:1px solid #e5e7eb; flex-wrap:wrap; }
+  .toolbar input[type=search] { flex:1; min-width:220px; padding:10px 12px; border:1px solid #d1d5db; border-radius:8px; }
+  .toolbar button { padding:10px 14px; border:0; border-radius:8px; cursor:pointer; background:var(--accent); color:#fff; }
+  table { width:100%; border-collapse:collapse; font-size:14px; }
+  thead th { position:sticky; top:0; background:#0d6efd; color:#fff; text-align:left; padding:12px; }
+  tbody td { padding:10px 12px; border-bottom:1px solid #f1f5f9; }
+  tbody tr:hover td { background:#f8fafc; }
+  .code { background:#f1f5f9; padding:2px 6px; border-radius:6px; }
+  .swatch { display:inline-block; width:36px; height:24px; border-radius:6px; box-shadow:inset 0 0 0 1px rgba(0,0,0,.12); vertical-align:middle; }
+  tfoot td { padding:10px 12px; color:var(--muted); font-size:12px; }
+  @media (max-width:720px) {
+    table, thead, tbody, th, td, tr { display:block; }
+    thead { display:none; }
+    tbody tr { border-bottom:1px solid #e5e7eb; padding:10px 0; }
+    tbody td { border:0; padding:6px 12px; }
+    tbody td::before { content: attr(data-label) ": "; font-weight:600; color:#374151; }
+    .swatch { width:48px; height:28px; }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Tabela de Cores — PT/EN, HEX, RGB</h1>
+    <p>Clique em um código para copiar. Use a busca para filtrar.</p>
+  </header>
+  <div class="wrap">
+    <div class="card">
+      <div class="toolbar">
+        <input id="q" type="search" placeholder="Filtrar por nome ou código…" aria-label="Filtro de cores">
+        <button id="clear" type="button">Limpar filtro</button>
+      </div>
+      <div style="overflow:auto; max-height:70vh;">
+        <table id="colors">
+          <thead>
+            <tr>
+              <th>Nome (PT-BR)</th>
+              <th>Nome (EN)</th>
+              <th>Hexadecimal</th>
+              <th>RGB</th>
+              <th>Cor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+            <td>Preto</td>
+            <td>Black</td>
+            <td><code class="code">#000000</code></td>
+            <td><code class="code">rgb(0, 0, 0)</code></td>
+            <td><span class="swatch" style="background:#000000" aria-label="Amostra da cor Preto"></span></td>
+        </tr>
+<tr>
+            <td>Branco</td>
+            <td>White</td>
+            <td><code class="code">#FFFFFF</code></td>
+            <td><code class="code">rgb(255, 255, 255)</code></td>
+            <td><span class="swatch" style="background:#FFFFFF" aria-label="Amostra da cor Branco"></span></td>
+        </tr>
+<tr>
+            <td>Cinza</td>
+            <td>Gray</td>
+            <td><code class="code">#808080</code></td>
+            <td><code class="code">rgb(128, 128, 128)</code></td>
+            <td><span class="swatch" style="background:#808080" aria-label="Amostra da cor Cinza"></span></td>
+        </tr>
+<tr>
+            <td>Vermelho</td>
+            <td>Red</td>
+            <td><code class="code">#FF0000</code></td>
+            <td><code class="code">rgb(255, 0, 0)</code></td>
+            <td><span class="swatch" style="background:#FF0000" aria-label="Amostra da cor Vermelho"></span></td>
+        </tr>
+<tr>
+            <td>Verde</td>
+            <td>Green</td>
+            <td><code class="code">#008000</code></td>
+            <td><code class="code">rgb(0, 128, 0)</code></td>
+            <td><span class="swatch" style="background:#008000" aria-label="Amostra da cor Verde"></span></td>
+        </tr>
+<tr>
+            <td>Azul</td>
+            <td>Blue</td>
+            <td><code class="code">#0000FF</code></td>
+            <td><code class="code">rgb(0, 0, 255)</code></td>
+            <td><span class="swatch" style="background:#0000FF" aria-label="Amostra da cor Azul"></span></td>
+        </tr>
+<tr>
+            <td>Amarelo</td>
+            <td>Yellow</td>
+            <td><code class="code">#FFFF00</code></td>
+            <td><code class="code">rgb(255, 255, 0)</code></td>
+            <td><span class="swatch" style="background:#FFFF00" aria-label="Amostra da cor Amarelo"></span></td>
+        </tr>
+<tr>
+            <td>Ciano</td>
+            <td>Cyan</td>
+            <td><code class="code">#00FFFF</code></td>
+            <td><code class="code">rgb(0, 255, 255)</code></td>
+            <td><span class="swatch" style="background:#00FFFF" aria-label="Amostra da cor Ciano"></span></td>
+        </tr>
+<tr>
+            <td>Magenta</td>
+            <td>Magenta</td>
+            <td><code class="code">#FF00FF</code></td>
+            <td><code class="code">rgb(255, 0, 255)</code></td>
+            <td><span class="swatch" style="background:#FF00FF" aria-label="Amostra da cor Magenta"></span></td>
+        </tr>
+<tr>
+            <td>Laranja</td>
+            <td>Orange</td>
+            <td><code class="code">#FFA500</code></td>
+            <td><code class="code">rgb(255, 165, 0)</code></td>
+            <td><span class="swatch" style="background:#FFA500" aria-label="Amostra da cor Laranja"></span></td>
+        </tr>
+<tr>
+            <td>Roxo</td>
+            <td>Purple</td>
+            <td><code class="code">#800080</code></td>
+            <td><code class="code">rgb(128, 0, 128)</code></td>
+            <td><span class="swatch" style="background:#800080" aria-label="Amostra da cor Roxo"></span></td>
+        </tr>
+<tr>
+            <td>Rosa</td>
+            <td>Pink</td>
+            <td><code class="code">#FFC0CB</code></td>
+            <td><code class="code">rgb(255, 192, 203)</code></td>
+            <td><span class="swatch" style="background:#FFC0CB" aria-label="Amostra da cor Rosa"></span></td>
+        </tr>
+<tr>
+            <td>Marrom</td>
+            <td>Brown</td>
+            <td><code class="code">#A52A2A</code></td>
+            <td><code class="code">rgb(165, 42, 42)</code></td>
+            <td><span class="swatch" style="background:#A52A2A" aria-label="Amostra da cor Marrom"></span></td>
+        </tr>
+<tr>
+            <td>Dourado</td>
+            <td>Gold</td>
+            <td><code class="code">#FFD700</code></td>
+            <td><code class="code">rgb(255, 215, 0)</code></td>
+            <td><span class="swatch" style="background:#FFD700" aria-label="Amostra da cor Dourado"></span></td>
+        </tr>
+<tr>
+            <td>Prata</td>
+            <td>Silver</td>
+            <td><code class="code">#C0C0C0</code></td>
+            <td><code class="code">rgb(192, 192, 192)</code></td>
+            <td><span class="swatch" style="background:#C0C0C0" aria-label="Amostra da cor Prata"></span></td>
+        </tr>
+<tr>
+            <td>Verde Claro</td>
+            <td>LightGreen</td>
+            <td><code class="code">#90EE90</code></td>
+            <td><code class="code">rgb(144, 238, 144)</code></td>
+            <td><span class="swatch" style="background:#90EE90" aria-label="Amostra da cor Verde Claro"></span></td>
+        </tr>
+<tr>
+            <td>Azul Claro</td>
+            <td>LightBlue</td>
+            <td><code class="code">#ADD8E6</code></td>
+            <td><code class="code">rgb(173, 216, 230)</code></td>
+            <td><span class="swatch" style="background:#ADD8E6" aria-label="Amostra da cor Azul Claro"></span></td>
+        </tr>
+<tr>
+            <td>Vermelho Escuro</td>
+            <td>DarkRed</td>
+            <td><code class="code">#8B0000</code></td>
+            <td><code class="code">rgb(139, 0, 0)</code></td>
+            <td><span class="swatch" style="background:#8B0000" aria-label="Amostra da cor Vermelho Escuro"></span></td>
+        </tr>
+<tr>
+            <td>Azul Marinho</td>
+            <td>Navy</td>
+            <td><code class="code">#000080</code></td>
+            <td><code class="code">rgb(0, 0, 128)</code></td>
+            <td><span class="swatch" style="background:#000080" aria-label="Amostra da cor Azul Marinho"></span></td>
+        </tr>
+<tr>
+            <td>Verde Escuro</td>
+            <td>DarkGreen</td>
+            <td><code class="code">#006400</code></td>
+            <td><code class="code">rgb(0, 100, 0)</code></td>
+            <td><span class="swatch" style="background:#006400" aria-label="Amostra da cor Verde Escuro"></span></td>
+        </tr>
+<tr>
+            <td>Turquesa</td>
+            <td>Turquoise</td>
+            <td><code class="code">#40E0D0</code></td>
+            <td><code class="code">rgb(64, 224, 208)</code></td>
+            <td><span class="swatch" style="background:#40E0D0" aria-label="Amostra da cor Turquesa"></span></td>
+        </tr>
+<tr>
+            <td>Violeta</td>
+            <td>Violet</td>
+            <td><code class="code">#EE82EE</code></td>
+            <td><code class="code">rgb(238, 130, 238)</code></td>
+            <td><span class="swatch" style="background:#EE82EE" aria-label="Amostra da cor Violeta"></span></td>
+        </tr>
+<tr>
+            <td>Salmão</td>
+            <td>Salmon</td>
+            <td><code class="code">#FA8072</code></td>
+            <td><code class="code">rgb(250, 128, 114)</code></td>
+            <td><span class="swatch" style="background:#FA8072" aria-label="Amostra da cor Salmão"></span></td>
+        </tr>
+<tr>
+            <td>Bege</td>
+            <td>Beige</td>
+            <td><code class="code">#F5F5DC</code></td>
+            <td><code class="code">rgb(245, 245, 220)</code></td>
+            <td><span class="swatch" style="background:#F5F5DC" aria-label="Amostra da cor Bege"></span></td>
+        </tr>
+<tr>
+            <td>Chocolate</td>
+            <td>Chocolate</td>
+            <td><code class="code">#D2691E</code></td>
+            <td><code class="code">rgb(210, 105, 30)</code></td>
+            <td><span class="swatch" style="background:#D2691E" aria-label="Amostra da cor Chocolate"></span></td>
+        </tr>
+<tr>
+            <td>Coral</td>
+            <td>Coral</td>
+            <td><code class="code">#FF7F50</code></td>
+            <td><code class="code">rgb(255, 127, 80)</code></td>
+            <td><span class="swatch" style="background:#FF7F50" aria-label="Amostra da cor Coral"></span></td>
+        </tr>
+<tr>
+            <td>Oliva</td>
+            <td>Olive</td>
+            <td><code class="code">#808000</code></td>
+            <td><code class="code">rgb(128, 128, 0)</code></td>
+            <td><span class="swatch" style="background:#808000" aria-label="Amostra da cor Oliva"></span></td>
+        </tr>
+<tr>
+            <td>Índigo</td>
+            <td>Indigo</td>
+            <td><code class="code">#4B0082</code></td>
+            <td><code class="code">rgb(75, 0, 130)</code></td>
+            <td><span class="swatch" style="background:#4B0082" aria-label="Amostra da cor Índigo"></span></td>
+        </tr>
+<tr>
+            <td>Caqui</td>
+            <td>Khaki</td>
+            <td><code class="code">#F0E68C</code></td>
+            <td><code class="code">rgb(240, 230, 140)</code></td>
+            <td><span class="swatch" style="background:#F0E68C" aria-label="Amostra da cor Caqui"></span></td>
+        </tr>
+          </tbody>
+          <tfoot>
+            <tr><td colspan="5">Gerado automaticamente — compatível com CSS (<code>color</code>, <code>background-color</code> etc.).</td></tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </div>
+
+<script>
+  // Ajusta os data-labels para visão móvel
+  const labels = ["Nome (PT-BR)","Nome (EN)","Hexadecimal","RGB","Cor"];
+  document.querySelectorAll("#colors tbody tr").forEach((tr)=>{
+    [...tr.children].forEach((td,i)=> td.setAttribute("data-label", labels[i]));
+  });
+
+  // Filtro simples
+  const q = document.getElementById('q');
+  const clearBtn = document.getElementById('clear');
+  function filter() { 
+    const term = q.value.trim().toLowerCase();
+    document.querySelectorAll("#colors tbody tr").forEach(tr => {
+      const text = tr.innerText.toLowerCase();
+      tr.style.display = text.includes(term) ? "" : "none";
+    });
+  }
+  q.addEventListener('input', filter);
+  clearBtn.addEventListener('click', ()=>{ q.value=''; filter(); q.focus(); });
+
+  // Clique para copiar códigos
+  document.querySelectorAll('#colors .code').forEach(el => {
+    el.addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText(el.textContent.trim()); el.style.outline='2px solid #22c55e'; setTimeout(()=>el.style.outline='none', 700); }
+      catch(e) { console.log('Clipboard indisponível', e); }
+    });
+    el.title = 'Clique para copiar';
+    el.style.cursor = 'pointer';
+  });
+</script>
+</body>
+</html>

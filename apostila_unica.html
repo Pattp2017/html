@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apostila — Versão Única</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <main style="padding:24px">
+    <section class="card hero">
+      <h2>Apostila de Imagens (HTML & CSS) — Versão Única</h2>
+      <p>Use esta página para **imprimir** ou gerar PDF direto do navegador.</p>
+    </section>
+
+          <div class="header">
+            <div class="breadcrumbs">Início ▸ Imagens no HTML</div>
+          </div>
+
+<section class="card">
+  <h2>Tag <code>&lt;img&gt;</code>: atributos essenciais</h2>
+  <ul>
+    <li><code>src</code>: caminho da imagem</li>
+    <li><code>alt</code>: texto alternativo (acessibilidade)</li>
+    <li><code>title</code>: dica exibida no hover</li>
+    <li><code>loading</code>: <code>lazy</code> para carregar sob demanda</li>
+    <li><code>width</code> / <code>height</code>: dimensões (use com cuidado)</li>
+  </ul>
+  <pre><code>&lt;img src="paisagem.jpg" alt="Montanhas ao pôr do sol" loading="lazy" width="480"&gt;</code></pre>
+</section>
+
+          <footer>© Apostila de Imagens — HTML & CSS</footer>
+
+          <div class="header">
+            <div class="breadcrumbs">Início ▸ Dimensões & Responsividade</div>
+          </div>
+
+<section class="card">
+  <h2>Dimensões e ajuste ao contêiner</h2>
+  <pre><code>img{
+  max-width:100%;   /* impede estouro do contêiner */
+  height:auto;      /* mantém proporção */
+  display:block;
+}</code></pre>
+</section>
+<section class="card">
+  <h2><code>object-fit</code> e <code>object-position</code></h2>
+  <pre><code>.capa{{
+  width:320px; height:180px;
+  object-fit: cover;        /* preenche cortando */
+  object-position: center;  /* foco no centro */
+}}</code></pre>
+  <figure>
+    <img src="assets/img/box-model.svg" alt="Box model para referência de dimensões">
+    <figcaption>Use <code>object-fit: cover</code> para miniaturas; <code>contain</code> para ver tudo sem cortes.</figcaption>
+  </figure>
+</section>
+
+          <footer>© Apostila de Imagens — HTML & CSS</footer>
+
+          <div class="header">
+            <div class="breadcrumbs">Início ▸ Margens & Espaçamentos</div>
+          </div>
+
+<section class="card">
+  <h2>Box Model</h2>
+  <figure>
+    <img src="assets/img/box-model.svg" alt="Diagrama do box model (margin, border, padding, content)">
+    <figcaption>Margem é o espaço externo; padding é o espaço interno; borda delimita o elemento.</figcaption>
+  </figure>
+</section>
+<section class="card grid cols-2">
+  <article>
+    <h3>Margem (<code>margin</code>)</h3>
+    <pre><code>img{
+  margin: 16px auto; /* centraliza horizontalmente */
+  display:block;
+}</code></pre>
+  </article>
+  <article>
+    <h3>Espaçamento interno (<code>padding</code>)</h3>
+    <pre><code>.thumb{
+  padding:12px;
+  border:1px solid #e5e7eb;
+  border-radius:10px;
+}</code></pre>
+  </article>
+</section>
+
+          <footer>© Apostila de Imagens — HTML & CSS</footer>
+
+          <div class="header">
+            <div class="breadcrumbs">Início ▸ Bordas & Sombras</div>
+          </div>
+
+<section class="card">
+  <h2>Bordas</h2>
+  <pre><code>img.avatar{
+  border:4px solid #10b981;
+  border-radius:50%;
+  padding:4px;
+}</code></pre>
+  <figure>
+    <img src="assets/img/borders.svg" alt="Variações de borda sólida, arredondada e tracejada">
+    <figcaption>Combine <code>border</code>, <code>border-radius</code> e <code>padding</code> para estilos diversos.</figcaption>
+  </figure>
+</section>
+<section class="card">
+  <h2>Sombras</h2>
+  <pre><code>.sombra-suave{
+  box-shadow: 2px 6px 16px rgba(0,0,0,.12);
+}</code></pre>
+</section>
+
+          <footer>© Apostila de Imagens — HTML & CSS</footer>
+
+          <div class="header">
+            <div class="breadcrumbs">Início ▸ Tipografia em Legendas</div>
+          </div>
+
+<section class="card">
+  <h2>Legendas e créditos</h2>
+  <pre><code>figure figcaption{
+  font-family:'Segoe UI', Arial, sans-serif;
+  font-size:14px;
+  color:#64748b;
+  text-align:center;
+  margin-top:6px;
+}</code></pre>
+  <figure>
+    <img src="assets/img/fonts.svg" alt="Exemplos de famílias e tamanhos de fonte">
+    <figcaption>Tipografia consistente melhora a leitura e a estética.</figcaption>
+  </figure>
+</section>
+
+          <footer>© Apostila de Imagens — HTML & CSS</footer>
+
+          <div class="header">
+            <div class="breadcrumbs">Início ▸ Cores & Paletas</div>
+          </div>
+
+<section class="card">
+  <h2>Cores no CSS</h2>
+  <ul>
+    <li><code>color</code>: cor do texto</li>
+    <li><code>background-color</code>: cor de fundo</li>
+    <li><code>border-color</code>: cor da borda</li>
+    <li>Notação: <code>#RRGGBB</code>, <code>rgb()</code>, <code>hsl()</code></li>
+  </ul>
+  <figure>
+    <img src="assets/img/colors.svg" alt="Blocos de cores com hex">
+    <figcaption>Amostras de cores em hexadecimal.</figcaption>
+  </figure>
+  <p>🔗 <a href="../tabela_cores_hex_rgb.html">Abrir tabela completa de cores (HEX e RGB)</a></p>
+</section>
+
+          <footer>© Apostila de Imagens — HTML & CSS</footer>
+
+          <div class="header">
+            <div class="breadcrumbs">Início ▸ Filtros & Efeitos</div>
+          </div>
+
+<section class="card">
+  <h2>Filtros em imagens</h2>
+  <pre><code>.efeitos img{
+  filter: grayscale(100%) brightness(1.1) contrast(0.9);
+}</code></pre>
+  <p>Outros filtros: <code>blur()</code>, <code>sepia()</code>, <code>hue-rotate()</code>, <code>saturate()</code>.</p>
+</section>
+
+          <footer>© Apostila de Imagens — HTML & CSS</footer>
+
+          <div class="header">
+            <div class="breadcrumbs">Início ▸ Acessibilidade</div>
+          </div>
+
+<section class="card">
+  <h2>Boas práticas de acessibilidade</h2>
+  <ul>
+    <li>Descrever a imagem no <code>alt</code> (sem redundância)</li>
+    <li>Evitar texto dentro da imagem quando possível</li>
+    <li>Garantir contraste adequado em legendas/overlays</li>
+    <li>Usar <code>loading="lazy"</code> para performance</li>
+  </ul>
+  <pre><code>&lt;img src="grafico.png" alt="Gráfico de barras comparando vendas por mês" loading="lazy"&gt;</code></pre>
+</section>
+
+          <footer>© Apostila de Imagens — HTML & CSS</footer>
+
+          <div class="header">
+            <div class="breadcrumbs">Início ▸ Boas Práticas & Checklist</div>
+          </div>
+
+<section class="card">
+  <h2>Checklist rápido</h2>
+  <ul>
+    <li>Alt significativo?</li>
+    <li>Responsivo (max-width:100%)?</li>
+    <li>Tamanho de arquivo otimizado?</li>
+    <li>Formato adequado (JPG/PNG/WebP/SVG)?</li>
+    <li>Legendas tipograficamente legíveis?</li>
+  </ul>
+</section>
+
+          <footer>© Apostila de Imagens — HTML & CSS</footer>
+
+          <div class="header">
+            <div class="breadcrumbs">Início ▸ Exercícios</div>
+          </div>
+
+<section class="card">
+  <h2>Exercícios práticos</h2>
+  <ol>
+    <li>Insira três imagens responsivas e centralizadas com legenda.</li>
+    <li>Monte um grid 3×2 com <code>gap</code> e <code>object-fit: cover</code>.</li>
+    <li>Crie variações de borda (sólida, tracejada, arredondada).</li>
+    <li>Aplique um filtro e remova-o via :hover.</li>
+    <li>Use a tabela de cores para definir borda e fundo de um card.</li>
+  </ol>
+</section>
+
+          <footer>© Apostila de Imagens — HTML & CSS</footer>
+
+    <footer>© Apostila de Imagens — HTML & CSS</footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,70 @@
+    <!doctype html>
+    <html lang="pt-BR">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Imagens no HTML</title>
+      <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+      <div class="layout">
+        <aside class="sidebar">
+          <div class="logo"><span class="dot"></span><h1>Apostila de Imagens</h1></div>
+          <ul class="toc">
+            <li><a href="index.html">01. Introdução</a></li>
+            <li><a href="imagens-html.html">02. Imagens no HTML</a></li>
+            <li><a href="dimensoes-responsivo.html">03. Dimensões & Responsividade</a></li>
+            <li><a href="margens-espacamentos.html">04. Margens & Espaçamentos</a></li>
+            <li><a href="bordas-sombras.html">05. Bordas & Sombras</a></li>
+            <li><a href="tipografia-legendas.html">06. Tipografia em Legendas</a></li>
+            <li><a href="cores-paletas.html">07. Cores & Paletas</a></li>
+            <li><a href="filtros-efeitos.html">08. Filtros & Efeitos</a></li>
+            <li><a href="acessibilidade.html">09. Acessibilidade</a></li>
+            <li><a href="boas-praticas.html">10. Boas Práticas & Checklist</a></li>
+            <li><a href="exercicios.html">11. Exercícios</a></li>
+          </ul>
+          <div class="kit">
+            <a class="btn" href="apostila_unica.html">Ver versão única (impressão)</a>
+            <a class="btn" id="print-book" href="javascript:void(0)">Imprimir</a>
+          </div>
+        </aside>
+        <main>
+          <div class="header">
+            <div class="breadcrumbs">Início ▸ Imagens no HTML</div>
+          </div>
+          <div class="header">
+            <div class="breadcrumb">Para inserir uma imagem em um documento web, utilizamos a tag <code>&lt;img&gt;</code>. O elemento <code>&lt;img&gt;</code> insere imagens que são apresentadas juntamente com os textos presente no documento. Um atributo SRC especificando o caminho físico onde encontra-se a imagem deve estar presente, da seguinte forma:</div>
+          </div>
+
+<section class="card">
+  <pre><code>&lt;img src="paisagem.jpg" alt="Montanhas ao pôr do sol"&gt;</code></pre>
+</section>
+
+<section class="card">
+            <div class="breadcrumb">Podemos referenciar imagens do nosso próprio servidor, ou imagens localizadas em outro servidor. As imagens usadas na Web são armazenadas em arquivos com extensão *.gif, *.jpg (ou *.jpeg), *.png.</div>
+</section>
+		  
+<section class="card">
+  <h2>Tag <code>&lt;img&gt;</code>: atributos essenciais</h2>
+  <ul>
+    <li><code>src</code>: caminho da imagem</li>
+    <li><code>alt</code>: texto alternativo (acessibilidade)</li>
+    <li><code>title</code>: dica exibida no hover, quando o cursor do mouse estiver sobre a imagem</li>
+    <li><code>width</code> / <code>height</code>: dimensões - largura e altura respectivamente (use com cuidado)</li>
+	<li><code>border</code>: cria uma borda ao redor da imagem</li>
+	  <ul>
+	    <li><code>LEFT</code>: a figura é desenhada como uma imagem à esquerda, com o texto fluido ao seu redor</li>
+	    <li><code>RIGHT</code>: a figura é desenhada como uma imagem à direita</li>
+	    <li><code>TOP</code>: a parte superior do texto ao redor é alinhada com a parte superior da imagem.</li>
+	    <li><code>MIDDLE:</code>: a linha de base do texto ao redor é alinhada com a parte central da imagem.</li>		
+	    <li><code>BOTTOM::</code>: a linha de base do texto ao redor é alinhada com a parte inferior daimagem.</li>			
+  </ul>
+  <pre><code>&lt;img src="paisagem.jpg" alt="Montanhas ao pôr do sol" width="480"&gt;</code></pre>
+</section>
+
+          <footer>© Apostila de Imagens — HTML & CSS</footer>
+        </main>
+      </div>
+      <script src="assets/js/site.js"></script>
+    </body>
+    </html>
