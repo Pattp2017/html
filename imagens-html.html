@@ -5,19 +5,26 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Imagens no HTML</title>
       <link rel="stylesheet" href="assets/css/style.css">
-		<style id="hide-menus">
-  /* Força 1 coluna e esconde todo tipo de menu só nesta página */
+<style id="kill-menus-and-gap">
+  /* some o menu desta página */
   .layout { display: block !important; }
   .sidebar,
   .sidebar .toc,
   .sidebar .menu,
   .topnav,
   .bottomnav,
-  #menu-fab,   /* botão do menu móvel */
-  .backdrop {  /* fundo do drawer */
-    display: none !important;
-  }
+  #menu-fab,
+  .backdrop,
+  .kit { display: none !important; }
+
+  /* zera o “espaço vago” no topo */
+  html, body { margin: 0; }
+  main { padding-top: 0 !important; }
+  /* se o primeiro filho tiver margem superior, corta aqui */
+  main > *:first-child { margin-top: 0 !important; }
+  .header:first-child { margin-top: 0 !important; }
 </style>
+
 
     </head>
     <body>
