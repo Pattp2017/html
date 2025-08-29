@@ -75,7 +75,7 @@ a:hover{text-decoration:underline}
 .kit .btn:hover{transform:translateY(-1px); border-color:var(--brand-2)}
 main{padding:26px}
 .header{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:16px}
-.header .breadcrumbs{color:var(--muted); font-size:14px}
+.header .breadcrumbs{color:var(--muted); font-size:18px}
 /* Cards */
 .card{
   background:linear-gradient(180deg, rgba(255,255,255,.02), transparent), var(--surface);
