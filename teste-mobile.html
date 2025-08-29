@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teste Mobile</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="logo"><span class="dot"></span><h1>Menu</h1></div>
+      <ul class="toc"><li><a href="index.html">Voltar ao site</a></li></ul>
+    </aside>
+    <main>
+      <div class="card"><h2>Diagnóstico Mobile</h2>
+      <p>Largura da tela: <span id="w"></span>px</p>
+      <p>Se você vê um botão “☰ Menu” flutuante no canto, o **drawer** está ativo.</p>
+      </div>
+    </main>
+  </div>
+  <script src="assets/js/site.js"></script>
+  <script>document.getElementById('w').textContent = window.innerWidth;</script>
+</body>
+</html>
