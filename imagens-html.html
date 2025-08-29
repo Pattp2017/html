@@ -18,6 +18,30 @@
     main > *:first-child { margin-top: 0 !important; }
     .header:first-child { margin-top: 0 !important; }
   </style>
+
+  <!-- Estilos do botão "Ver exemplo" -->
+  <style>
+    .section-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .btn-link {
+      display: inline-block;
+      padding: 8px 14px;
+      border: 1px solid #0d6efd;
+      border-radius: 8px;
+      text-decoration: none;
+      font: 500 14px/1 Arial, sans-serif;
+      background: #0d6efd;
+      color: #fff;
+      transition: transform .02s ease, opacity .2s ease;
+    }
+    .btn-link:hover { opacity: .9; }
+    .btn-link:active { transform: translateY(1px); }
+  </style>
 </head>
 <body>
   <div class="layout">
@@ -56,16 +80,20 @@
         </div>
       </section>
 
-      <section class="card">
-        <h2>Tag <code>&lt;img&gt;</code>: atributos </h2>
-        <a href:"exemplo-imagem.html">Exemplo</a>
+      <!-- SEÇÃO ALTERADA: título + botão para exemplo-imagem.html -->
+      <section class="card" id="tag-atributos">
+        <div class="section-title">
+          <h2>Tag <code>&lt;img&gt;</code>: atributos</h2>
+          <a class="btn-link" href="exemplo-imagem.html">Ver exemplo</a>
+        </div>
+
         <ul>
           <li><code>src</code>: caminho da imagem</li>
           <li><code>alt</code>: texto alternativo (acessibilidade)</li>
           <li><code>title</code>: dica exibida no hover, quando o cursor do mouse estiver sobre a imagem</li>
           <li><code>width</code> / <code>height</code>: dimensões - largura e altura respectivamente (use com cuidado)</li>
           <li><code>border</code>: cria uma borda ao redor da imagem</li>
-          <li>Alinhamento: 
+          <li>Alinhamento:
             <ul>
               <li><code>LEFT</code>: imagem à esquerda, texto contorna</li>
               <li><code>RIGHT</code>: imagem à direita</li>
@@ -74,34 +102,41 @@
               <li><code>BOTTOM</code>: base do texto alinha à base da imagem</li>
             </ul>
           </li>
-          <li>Bordas e Caminho: 
+          <li>Bordas e Caminho:
             <ul>
               <li><code>border-radius</code>: adicionar cantos arredondados às imagens</li>
               <li><code>clip-path</code>: permite que você defina um caminho de recorte para um elemento, criando formas exclusivas.</li>
-              <ul> 
-                <li><code>circle():</code> recorta o elemento para uma forma circular.</li>
-                <li><code>ellipse():</code> recorta o elemento para uma forma elíptica. </li>
-                <li><code>inset():</code>recorta o elemento inserindo-o a partir de suas bordas, criando uma região de recorte retangular. </li>
-                <li><code>polygon():</code> recorta o elemento para um polígono personalizado definido por uma série de pontos de coordenadas. </li>
-                <li><code>path():</code> permite formas mais complexas e responsivas usando dados de caminho SVG. </li>
-                <li><code>rect(), shape(), xywh():</code> outras funções de forma para necessidades específicas de recorte</li>
-              </ul>  
-              <p>Exemplo CSS </p>
-              <p>
-              <p>img {
-              clip-path: circle(50%);
-              width: 200px;
-              height: 200px;
-              }</p>
-              <li><code>TOP</code>: topo do texto alinha ao topo da imagem</li>
-              <li><code>MIDDLE</code>: base do texto alinha ao centro da imagem</li>
-              <li><code>BOTTOM</code>: base do texto alinha à base da imagem</li>
+              <li>
+                <ul>
+                  <li><code>circle()</code>: recorta o elemento para uma forma circular.</li>
+                  <li><code>ellipse()</code>: recorta o elemento para uma forma elíptica.</li>
+                  <li><code>inset()</code>: recorta o elemento inserindo-o a partir de suas bordas.</li>
+                  <li><code>polygon()</code>: recorta o elemento para um polígono personalizado.</li>
+                  <li><code>path()</code>: formas complexas usando dados de caminho SVG.</li>
+                  <li><code>rect(), shape(), xywh()</code>: outras funções de recorte.</li>
+                </ul>
+              </li>
             </ul>
-          </li>        
+          </li>
         </ul>
+
+        <p>Exemplo CSS:</p>
+        <pre><code>img {
+  clip-path: circle(50%);
+  width: 200px;
+  height: 200px;
+}</code></pre>
+
+        <ul>
+          <li><code>TOP</code>: topo do texto alinha ao topo da imagem</li>
+          <li><code>MIDDLE</code>: base do texto alinha ao centro da imagem</li>
+          <li><code>BOTTOM</code>: base do texto alinha à base da imagem</li>
+        </ul>
+
         <pre><code>&lt;img src="paisagem.jpg" alt="Montanhas ao pôr do sol" width="480"&gt;</code></pre>
       </section>
-      <footer>© Apostila de Imagens — HTML & CSS</footer>
+
+      <footer>© Apostila de Imagens — HTML &amp; CSS</footer>
     </main>
   </div>
 
