@@ -64,7 +64,7 @@
           <li><code>title</code>: dica exibida no hover, quando o cursor do mouse estiver sobre a imagem</li>
           <li><code>width</code> / <code>height</code>: dimensões (use com cuidado)</li>
           <li><code>border</code>: cria uma borda ao redor da imagem</li>
-          <li>Alinhamento (HTML antigo): 
+          <li>Alinhamento: 
             <ul>
               <li><code>LEFT</code>: imagem à esquerda, texto contorna</li>
               <li><code>RIGHT</code>: imagem à direita</li>
@@ -73,6 +73,21 @@
               <li><code>BOTTOM</code>: base do texto alinha à base da imagem</li>
             </ul>
           </li>
+          <li>Bordas e Caminho: 
+            <ul>
+              <li><code>border-radius</code>: adicionar cantos arredondados às imagens</li>
+              <li><code>clip-path</code>: permite que você defina um caminho de recorte para um elemento, criando formas exclusivas.</li>
+              <p>exemplo de CSS 
+              img {
+              clip-path: circle(50%);
+              width: 200px;
+             height: 200px;
+              }</p>
+              <li><code>TOP</code>: topo do texto alinha ao topo da imagem</li>
+              <li><code>MIDDLE</code>: base do texto alinha ao centro da imagem</li>
+              <li><code>BOTTOM</code>: base do texto alinha à base da imagem</li>
+            </ul>
+          </li>        
         </ul>
         <pre><code>&lt;img src="paisagem.jpg" alt="Montanhas ao pôr do sol" width="480"&gt;</code></pre>
       </section>
