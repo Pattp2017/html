@@ -1,0 +1,10 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300">
+  <style>.t{font:14px sans-serif;fill:#0f172a}</style>
+  <rect x="60" y="50" width="240" height="160" fill="#fff" stroke="#111827" stroke-width="1"/>
+  <text x="65" y="225" class="t">border: 1px solid #111827</text>
+  <rect x="340" y="50" width="240" height="160" fill="#fff" stroke="#10b981" stroke-width="6" rx="14" ry="14"/>
+  <text x="345" y="225" class="t">border: 6px solid #10b981; border-radius:14px</text>
+  <rect x="620" y="50" width="240" height="160" fill="#fff" stroke="#ef4444" stroke-width="10" stroke-dasharray="10,8"/>
+  <text x="625" y="225" class="t">border: 10px dashed #ef4444</text>
+</svg>

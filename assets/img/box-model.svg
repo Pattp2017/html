@@ -1,0 +1,12 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="380">
+  <style>.t{font:14px sans-serif; fill:#0f172a}</style>
+  <rect x="40" y="40" width="820" height="300" fill="#e2e8f0"/>
+  <text x="50" y="60" class="t">Margem (margin)</text>
+  <rect x="110" y="100" width="680" height="200" fill="#fde68a" stroke="#f59e0b"/>
+  <text x="120" y="120" class="t">Borda (border)</text>
+  <rect x="160" y="150" width="580" height="120" fill="#93c5fd" stroke="#3b82f6"/>
+  <text x="170" y="170" class="t">Padding (espaçamento interno)</text>
+  <rect x="210" y="190" width="480" height="40" fill="#fca5a5" stroke="#ef4444"/>
+  <text x="220" y="215" class="t">Conteúdo (img)</text>
+</svg>

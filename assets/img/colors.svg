@@ -1,0 +1,10 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="160">
+  <style>.t{font:12px sans-serif;fill:#0f172a}</style>
+  <rect x="40" y="30" width="120" height="80" fill="#ef4444"/><text x="46" y="125" class="t">#ef4444</text>
+  <rect x="180" y="30" width="120" height="80" fill="#f59e0b"/><text x="186" y="125" class="t">#f59e0b</text>
+  <rect x="320" y="30" width="120" height="80" fill="#10b981"/><text x="326" y="125" class="t">#10b981</text>
+  <rect x="460" y="30" width="120" height="80" fill="#3b82f6"/><text x="466" y="125" class="t">#3b82f6</text>
+  <rect x="600" y="30" width="120" height="80" fill="#8b5cf6"/><text x="606" y="125" class="t">#8b5cf6</text>
+  <rect x="740" y="30" width="120" height="80" fill="#0ea5e9"/><text x="746" y="125" class="t">#0ea5e9</text>
+</svg>

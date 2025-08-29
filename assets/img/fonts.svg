@@ -1,0 +1,13 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="320">
+  <style>
+    .cap{font:32px Georgia, serif; fill:#0f172a}
+    .body{font:18px 'Segoe UI', Arial, sans-serif; fill:#334155}
+    .mono{font:16px Consolas, monospace; fill:#111827}
+    .small{font:12px 'Segoe UI', Arial; fill:#6b7280}
+  </style>
+  <text x="40" y="60" class="cap">Título com fonte serifada (Georgia)</text>
+  <text x="40" y="120" class="body">Parágrafo com sem serifa (Segoe UI)</text>
+  <text x="40" y="180" class="mono">Código em monoespaçada (Consolas)</text>
+  <text x="40" y="240" class="small">Legenda menor e mais clara</text>
+</svg>
