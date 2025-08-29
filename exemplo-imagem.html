@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo de Imagens - Alinhamento e Clip-Path</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      margin: 20px;
+    }
+    h2 {
+      margin-top: 40px;
+      color: #003366;
+    }
+    .box {
+      margin: 20px 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    img {
+      width: 150px;
+      height: 150px;
+      margin: 10px;
+      border: 2px solid #333;
+    }
+    /* Alinhamentos */
+    .left {
+      float: left;
+      margin-right: 15px;
+    }
+    .right {
+      float: right;
+      margin-left: 15px;
+    }
+    .top {
+      vertical-align: top;
+    }
+    .middle {
+      vertical-align: middle;
+    }
+    .bottom {
+      vertical-align: bottom;
+    }
+
+    /* Bordas arredondadas */
+    .rounded {
+      border-radius: 20px;
+    }
+
+    /* Formas com clip-path */
+    .circle {
+      clip-path: circle(50%);
+    }
+    .ellipse {
+      clip-path: ellipse(40% 60%);
+    }
+    .inset {
+      clip-path: inset(20px 20px 20px 20px);
+    }
+    .polygon {
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    }
+    .path {
+      clip-path: path("M 75 0 Q 150 37.5 75 75 Q 0 37.5 75 0 Z");
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Exemplos de Imagens com Alinhamento e Clip-Path</h1>
+
+  <!-- Alinhamento -->
+  <h2>Alinhamento LEFT e RIGHT</h2>
+  <div class="box">
+    <img src="https://picsum.photos/200" alt="Exemplo" class="left">
+    <p>Esta imagem está alinhada à <b>esquerda</b> usando <code>float: left;</code>. O texto contorna a imagem automaticamente, ocupando o espaço restante no lado direito.</p>
+    <div style="clear: both;"></div>
+    
+    <img src="https://picsum.photos/201" alt="Exemplo" class="right">
+    <p>Já esta está alinhada à <b>direita</b> usando <code>float: right;</code>. O texto flui ao redor da imagem no lado esquerdo.</p>
+    <div style="clear: both;"></div>
+  </div>
+
+  <h2>Alinhamento TOP, MIDDLE e BOTTOM</h2>
+  <div class="box">
+    <p>
+      <img src="https://picsum.photos/202" alt="Exemplo" class="top">
+      Texto alinhado ao <b>topo</b> da imagem.
+    </p>
+    <p>
+      <img src="https://picsum.photos/203" alt="Exemplo" class="middle">
+      Texto alinhado ao <b>meio</b> da imagem.
+    </p>
+    <p>
+      <img src="https://picsum.photos/204" alt="Exemplo" class="bottom">
+      Texto alinhado à <b>base</b> da imagem.
+    </p>
+  </div>
+
+  <!-- Bordas e Clip-Path -->
+  <h2>Bordas arredondadas e Formas com Clip-Path</h2>
+  <div class="box">
+    <img src="https://picsum.photos/205" alt="Exemplo" class="rounded">
+    <img src="https://picsum.photos/206" alt="Exemplo" class="circle">
+    <img src="https://picsum.photos/207" alt="Exemplo" class="ellipse">
+    <img src="https://picsum.photos/208" alt="Exemplo" class="inset">
+    <img src="https://picsum.photos/209" alt="Exemplo" class="polygon">
+    <img src="https://picsum.photos/210" alt="Exemplo" class="path">
+    <p>
+      Exemplos de imagens com diferentes recortes:  
+      <b>border-radius</b>, <b>circle()</b>, <b>ellipse()</b>, <b>inset()</b>, <b>polygon()</b>, <b>path()</b>.
+    </p>
+  </div>
+
+</body>
+</html>
